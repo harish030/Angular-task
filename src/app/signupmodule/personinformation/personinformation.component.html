@@ -1,0 +1,61 @@
+<div class="info-topnav">
+    <img class="tvs-size pt-3 ps-3 pb-3" src="../../../assets/TVS-removebg-preview.png" alt="">
+</div>
+<div class="info-bg">
+    <div class="col-6 info-details py-5 ">
+        <h3 class="info-heading">Welcome to Assure</h3>
+        <h4 class="info-subheading mt-4">Please Provide basic information</h4>
+        <form (ngSubmit)="onSubmit(reForm)" #reForm="ngForm" class="row g-3 mt-3">
+            <div class="col-md-6">
+              <label for="firstName" class="form-label">First Name</label>
+              <input [(ngModel)]="information.firstname" name="firstname" type="text" class="form-control" id="firstName" required>
+            </div>
+            <div class="col-md-6">
+              <label for="lastName" class="form-label">Last Name</label>
+              <input [(ngModel)]="information.lastname" type="text" name="lastname" class="form-control" id="lastName" required>
+            </div>
+            <div class="col-12">
+                <label for="emailAddress" class="form-label">Email Address</label>
+                <input [(ngModel)]="information.email" name="email" type="text" class="form-control" id="emailAddress" required email>
+              </div>
+              <div class="col-12">
+                <label for="mobileNumber" class="form-label">Mobile Number</label>
+                <input disabled [(ngModel)]="information.mobilenumber" type="text" name="mobilenumber1"  class="form-control" id="mobileNumber" required >
+              </div>
+            <div class="col-12">
+              <label for="address1" class="form-label">Address 1</label>
+              <input [(ngModel)]="information.address1" type="text" name="address1" class="form-control" id="address1" required>
+            </div>
+            <div class="col-12">
+              <label for="address2" class="form-label">Address 2</label>
+              <input [(ngModel)]="information.address2" type="text" name="address2" class="form-control" id="address2" >
+            </div>
+            <div class="col-12">
+                <label for="landMark" class="form-label">Landmark</label>
+                <input [(ngModel)]="information.landmark" name="landmark" type="text" class="form-control" id="landMark" required >
+              </div>
+            <div class="col-md-6">
+              <label for="pinCode" class="form-label">Pincode</label>
+              <input [(ngModel)]="information.pincode" name="pincode" type="number" class="form-control" id="pinCode" required>
+            </div>
+            <div class="col-md-6">
+              <label for="state" class="form-label">State</label>
+              <select [(ngModel)]="information.state" name="state" (change)="onChange1()" id="state" class="form-select">
+                <option *ngFor="let state of details"  value="{{state.state}}">{{state.state}}</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+               
+                <label for="district" class="form-label">City/District/Town</label>
+                <select [(ngModel)]="information.district" name="district" id="district" class="form-select">
+                  <option *ngFor="let district1 of districtList"  value="{{district1.district}}">{{district1.district}}</option>
+                </select>
+              </div>
+           
+            
+            <div class="col-12">
+              <input [disabled]="!reForm.valid" value="Save"  type="submit" class="btn px-5 py-2 info-button">
+            </div>
+          </form>
+    </div>
+</div>

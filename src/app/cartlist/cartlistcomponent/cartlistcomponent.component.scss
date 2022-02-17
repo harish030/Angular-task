@@ -1,0 +1,195 @@
+.addresscomponent{
+    background-color: #FAFAFA;
+    
+}
+
+.addresscomponent>.padding{
+    padding-left:8rem ;
+    padding-right:8rem ;
+    padding-top: 4rem;
+    padding-bottom:4rem ;
+}
+
+.address-heading{
+    letter-spacing: 0.48px;
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    font-weight:500 ;
+    font-size: 24px;
+}
+
+.address-cont{
+    border: 1px solid #3C2B754D;
+border-radius: 2px;
+background-color: #D0CDDD29;
+width: 100%;
+
+}
+
+.user-name{
+    color: #545061;
+    font-family: 'Poppins', sans-serif;
+    font-weight:500 ;
+    font-size: 16px;
+}
+.addresslist{
+    color: #545061;
+opacity: 0.6;
+font-family: 'Poppins', sans-serif;
+    font-weight:400 ;
+    font-size: 12px;
+}
+.edit-address{
+    color: #3C2B75;
+    font-family: 'Poppins', sans-serif;
+    font-weight:600 ;
+    font-size: 12px;
+}
+.add-newaddress{
+    letter-spacing: 0.32px;
+color: #3C2B75;
+font-family: 'Poppins', sans-serif;
+    font-weight:600 ;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.cart-list{
+    background-color: #FFFFFF;
+    
+}
+
+.cart-list>.padding{
+    padding-left: 4rem;
+    padding-top: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 4rem;
+}
+
+.cart-list-heading{
+    color: #000000;
+    font-family: 'Lato', sans-serif;
+    font-weight:900 ;
+    font-size: 32px;
+}
+.clear-cart{
+    color: #3C2B75;
+    font-family: 'Poppins', sans-serif;
+    font-weight:500 ;
+    font-size: 14px;
+}
+.cart-title{
+    color: #545061;
+    font-family: 'Poppins', sans-serif;
+    font-weight:400 ;
+    font-size: 12px;
+}
+.device-list{
+    color: #000000;
+    font-family: 'Lato', sans-serif;
+    font-weight:700 ;
+    font-size: 32px;
+}
+.device-list>span{
+    font-family: 'Lato', sans-serif;
+    font-weight:400 ;
+    font-size: 24px;
+    color: #000000;
+}
+.item-details{
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    font-weight:600 ;
+    font-size: 24px;
+    width: 60%;
+    
+}
+.bi-plus-square{
+    padding-bottom: 300px;
+}
+
+.item-amount{
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    font-weight:600 ;
+    font-size: 24px;
+}
+
+.service-date-slot-grid{
+    display: grid;
+    grid-template-columns: 50% auto;
+}
+.date-slot{
+    color: #545061;
+    font-family: 'Poppins', sans-serif;
+    font-weight:500 ;
+    font-size: 14px;
+}
+.date{
+    width: 50%;
+    padding: 10px;
+}
+
+.time-grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+.time-grid>div{
+    color: #545061;
+    font-family: 'Poppins', sans-serif;
+    font-weight:600 ;
+    font-size: 14px;
+}
+.time-grid>button{
+    border:none;
+    background-color: inherit;
+    
+}
+.time-grid>button:focus{
+    border-bottom: 4px #3C2B75 solid ;
+    
+    
+    border-radius: 4px;
+    
+    
+}
+.add-another-device{
+    letter-spacing: 0.32px;
+color: #3C2B75;
+font-family: 'Poppins', sans-serif;
+    font-weight:600 ;
+    font-size: 16px;
+}
+
+.amount{
+    letter-spacing: 0.48px;
+color: #000000;
+font-family: 'Poppins', sans-serif;
+    font-weight:600 ;
+    font-size: 24px;
+}
+.total-amount{
+    border-top: rgba(0, 0, 0, 0.1) solid 2px;
+    border-bottom: rgba(0, 0, 0, 0.1) solid 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+.amount>span{
+    letter-spacing: 0.32px;
+color: #70818B;
+font-family: 'Poppins', sans-serif;
+    font-weight:400 ;
+    font-size: 16px;
+}
+.checkout-final{
+    background-color: rgba(60, 43, 117, 1);
+    border-radius: 4px;
+    border: none;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Poppins', sans-serif;
+    font-weight:400 ;
+    font-size: 16px;
+}

@@ -1,0 +1,56 @@
+
+
+
+form{
+    padding-top: 7rem;
+}
+.tvs-size{
+    width: 200px;
+    height: 50px;
+}
+.signupform-bg{
+    background-color:#FAFAFA;
+    height: 100vh;
+}
+.signup-heading{
+    font-family: 'Lato', sans-serif;
+    font-weight:700 ;
+    font-size:32px ;
+    color: #2A2A2A;
+}
+.signup-subheading{
+    font-family: 'Poppins', sans-serif;
+    font-weight:400 ;
+    font-size:12px ;
+    color: #545061;
+
+}
+
+.signup-button{
+    background-color: #3C2B75;
+    border-radius: 4px;
+    width: 100%;
+    border: none;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-weight:600 ;
+    font-size:16px ;
+}
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #545061;
+opacity: 0.3;
+  }
+
+.signup-withemail{
+    color: #3C2B75;
+    font-family: 'Poppins', sans-serif;
+    font-weight:400 ;
+    font-size:16px ;
+   
+}
+.input-group{
+    height: 48px;
+}
+

@@ -1,0 +1,636 @@
+
+.pincode-toast{
+    width: 558px;
+
+position: absolute;
+top: 0;
+left:330px;
+
+background-color: #CF3E3E;
+box-shadow: 0px 12px 32px #00000029;
+border-radius: 4px;
+}
+
+.pincode-toast{
+padding: 12px;
+}
+.pincode-toast-title{
+    color: #FFFFFF;
+    font-family: 'Lato', sans-serif;
+    font-weight:700 ;
+    font-size:16px ;
+}
+.bi-exclamation-triangle-fill{
+    color: #FFFFFF;
+}
+.bi-x{
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.pincode-toast-content{
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-weight:400 ;
+    font-size:12px ;
+}
+.device-repair-select{
+    width: 350px;
+    height: 465px;
+    position: absolute;
+    box-shadow: 0px 12px 24px #00000014;
+    border-radius: 24px;
+    background-color: #FFFFFF;
+    z-index: 50;
+    top: 25vh;
+    left: 30vw;
+
+}
+.overflow{
+    overflow-y: scroll;
+    height: 350px;
+}
+hr{
+    color: rgba(112, 112, 112, 1);;
+}
+.device-repair-select>.padding{
+   padding-top: 20px;
+   padding-bottom: 20px;
+    padding-left: 35px;
+    padding-right: 30px;
+}
+.select-device-repair-title{
+    width: 80%;
+}
+.device-repair-bg{
+    background-color: rgba(60, 43, 117, 0.1);
+    border-radius: 8px;
+
+}
+
+.device-repair-name{
+    color: rgba(0, 0, 0, 1);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+.bg-opacity{
+    
+    background-color: rgba(0, 0, 0, 0.3)!important;
+    
+
+}
+
+
+
+.banner{
+    background-image: url(../../assets/banner.png);
+    height: 495px;
+    
+    background-repeat:no-repeat;
+background-size:contain;
+background-position:center;
+    position: relative;
+}
+
+
+.pos-rel{
+   position: relative;
+   left: -90px;
+   background-color: #3C2B75;
+   color: white;
+   border: none;
+   border-radius: 4px;
+
+}
+.input-form{
+   position: absolute;
+   top: 276px;
+left: 316px;
+}
+.popular-searches{
+    position: absolute;
+   top: 351px;
+left: 316px;
+}
+.search{
+    color: #3C2B75;
+    font-family:'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+}
+.search-item{
+    color: #3C2B75;
+    font-family:'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    
+    
+}
+.service-item-list{
+    position: absolute;
+    top: 391px;
+ left: 460px;
+ text-align: center;
+}
+.service-item-width{
+    font-size: 14px!important;
+    
+}
+.service-item-css{
+    color: #3C2B75;
+    font-family:'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+.input-1{
+   border: 1px solid #BDB9AD;
+border-radius: 10px;
+width: 166px;
+height: 56px;
+}
+.input-2{
+   border: 1px solid #BDB9AD;
+border-radius: 10px;
+width: 300px;
+height: 56px;
+}
+.warranty-comp{
+   background-color: #3C2B75;
+  
+   
+}
+
+.device-service-comp{
+   background-color: #FFFFFF;
+   box-shadow: 0px 16px 64px #00000014;
+ 
+   width: 100%;
+   position:absolute;
+   top: 88%;
+   border-radius: 8px;
+  
+}
+.device-service-comp-grid{
+   display: grid;
+   grid-template-columns: 50% 50%;
+   column-gap: 50px;
+}
+
+.border-app{
+   box-shadow: 0px 1px 1px #00000029;
+border-radius: 14px;
+border: none;
+background-color: white;
+width: 72px;
+height: 72px;
+}
+
+.img-height{
+   height: 50px;
+}
+
+.border-app:focus{
+   border: 1px solid #3C2B75;
+}
+
+.phone{
+   height: 50px;
+}
+
+.service-bg{
+    box-shadow: 0px 1px 1px #00000029;
+border-radius: 8px;
+border: none;
+background-color: #FAFAFA;
+}
+
+.warranty-comp-header>h3{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    width: 65%;
+    padding-left: 100px;
+    padding-top: 150px;
+    color: #FFFFFF;
+}
+
+.warranty-comp-grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 50px;
+}
+
+.warranty-comp-bg{
+    border-radius: 50%;
+    height: 50px;
+    background-color: rgba(133, 117, 187, 0.5);
+}
+.bi-hand-index-thumb,.bi-gear,.bi-shield-check{
+    font-size: 30px;
+}
+.warranty-comp-instruct{
+    font-family: 'Roboto', sans-serif;
+    font-weight:700 ;
+    font-size:20px;
+}
+.warranty-comp-instruct2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+.warranty-comp-input{
+    background-color: rgba(255, 255, 255, 1) ;
+box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.08);
+border: 1px solid rgba(0, 0, 0, 0.1);
+border-radius: 8px;
+width: 100%;
+height: 104px;
+}
+
+.form-select{
+    height: 35px;
+    border: none;
+    color: #000000;
+    font-family:'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    width: 390px;
+    background-color:inherit;
+}
+
+.warranty-comp-btn{
+    background: rgba(60, 43, 117, 1) ;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    font-family:'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+.mantain-contract-header{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    color: rgba(10, 4, 60, 1);
+}
+.mantain-contract-subheader{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(20, 14, 42, 1);
+}
+.mantain-contract-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 20px;
+}
+
+.mantain-contract-grid>.card>.card-body>.card-title{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    color: #0A043C;
+}
+
+.mantain-contract-grid>.card>.card-body>.card-text{
+    font-family: 'Lato', sans-serif;
+    font-weight:400;
+    font-size: 18px;
+    color: #79869F;
+}
+
+.mantain-contract-grid>.card{
+    border: none;
+   
+}
+.mantain-contract-grid>.card>img{
+    border-radius: 10px;
+}
+.specific-service{
+   background-color: #F9F9F9;
+   height: 800px;
+   position: relative;
+}
+
+
+.specific-service-img{
+    background-image: url(../../assets/con6.png);
+    position: absolute;
+    width: 477px;
+height: 599px;
+right: 0px;
+bottom: 0px;
+box-shadow: 0px;
+   
+}
+.specific-service>div>h4{
+    font-family: 'Lato', sans-serif;
+    font-weight:700 ;
+    font-size:40px ;
+    color: #000000;
+    width: 65%;
+}
+
+.specific-service-form{
+    box-shadow: 0px 20px 40px #00000014;
+border: 1px solid #0000001A;
+border-radius: 8px;
+width: 60%;
+margin-top: 7rem;
+
+}
+.specific-service{
+    div{
+        .form-button{
+            background-color:  #3C2B75;
+            border-radius: 4px;
+            border: none;
+            color: #FFFFFF;
+            font-family: 'Poppins', sans-serif;
+            font-weight:500 ;
+            font-size:18px ;
+        }
+    }
+}
+
+.specific-service-grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 20px;
+}
+
+.circle{
+    background-color: #FFFFFF;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+}
+.specific-service-card{
+    background-color: #3C2B75;
+    border-radius: 14px;
+height: 266px;
+z-index: 1;
+}
+
+.line{
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 1px;
+    margin-left: 8px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.line1{
+    background-color: #FFFFFF;
+    width: 30px;
+    height: 1px;
+    margin-left: 8px;
+    margin-right: 7px;
+    margin-top: 5px;
+}
+
+.specific-service-card-title{
+    font-family: 'Poppins', sans-serif;
+    font-weight:600 ;
+    font-size:24px ;
+    color: #FFFFFF;
+    width: 70%;
+}
+
+.specific-service-card-body{
+    font-family: 'Poppins', sans-serif;
+    font-weight:300 ;
+    font-size: 12px;
+    color: #FFFFFF;
+    width: 95%;
+}
+
+.specific-service-subheader{
+    font-family: 'Poppins', sans-serif;
+    font-weight:500 ;
+    font-size:32px ;
+    color: #000000;
+}
+
+.con-7{
+    background-color: #3C2B75;
+    
+    position: relative;
+}
+.card{
+    border: none!important;
+}
+.con-7-bg{
+    background-image: url(../../assets/repeatgrid.png);
+    position: absolute;
+    height: 100%;
+   
+    width: 50%;
+    right: 0px;
+    top: 0px;
+}
+.con-7-main-grid{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    column-gap: 40px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 5rem;
+    padding-bottom: 6rem;
+}
+.con-7-sub-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 20px;
+}
+
+.con-7-img{
+    width: 200px;
+height: 200px;
+    position: relative;
+    
+}
+.con-7-img>img{
+    border-radius: 10px;
+}
+.con-7-img>h6{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+
+   
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-align: center;
+}
+.con-7-header{
+    letter-spacing: 2.88px;
+    color: #FFFFFF;
+    font-family: 'Lato', sans-serif;
+    font-weight:700 ;
+    font-size: 16px;
+}
+
+.con-7-header>span{
+    width: 100px;
+    height: 1px;
+    background-color: #FFFFFF;
+}
+
+.con-7-line{
+    width: 100%;
+    height: 1px;
+    background-color: #FFFFFF;
+    display: inline-block;
+}
+.con-7-subheading{
+    font-family: 'Lato', sans-serif;
+    font-weight:700 ;
+    font-size: 48px;
+    color: #FFFFFF;
+}
+.con-7-content{
+    font-family: 'Lato', sans-serif;
+    font-weight:400 ;
+    font-size: 16px;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+
+
+.con-8{
+    background-color: #FFFFFF;
+   
+}
+.con-8-heading{
+    font-family: 'Lato', sans-serif;
+    font-weight:700 ;
+    font-size: 48px;
+    width: 50%;
+    margin: auto;
+    color: #0A043C;
+    text-align: center;
+    
+}
+
+.con-8-subheading{
+    font-family: 'Lato', sans-serif;
+    font-weight:400 ;
+    font-size: 24px;
+    color: #79869F;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+.con-8-maingrid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 3rem;
+    
+}
+.con-8-maingrid>.bg-color{
+   padding-top: 7rem;
+   padding-left: 4rem;
+}
+
+.con-8-grid-heading{
+    font-family: 'Lato', sans-serif;
+    font-weight:700 ;
+    font-size: 16px;
+    letter-spacing: 2.88px;
+    color: #3C2B75;
+}
+
+.con-8-lineblack{
+    width: 20%;
+    height: 1px;
+    margin-left: 5px;
+    background-color: #3C2B75;
+    display: inline-block;
+}
+
+.con-8-subgrid{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.con-8-card>.card-title{
+    background-color: rgba(43, 167, 221, 0.14);
+    border-radius: 12px;
+    width: 56px;
+    height: 56px;
+   
+}
+.con-8-card>.card-subtitle{
+    letter-spacing: 0.4px;
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    font-weight:500 ;
+    font-size:20px ;
+}
+.con-8-card>.card-text{
+    font-family: 'Poppins', sans-serif;
+    font-weight:400 ;
+    font-size:12px ;
+    letter-spacing: 0.24px;
+color: #707070;
+}
+
+.bi-calendar,.bi-cpu-fill,.bi-sliders,.bi-person-badge-fill,.bi-gear-fill,.bi-hand-thumbs-up-fill{
+    color: rgba(43, 167, 221, 1);
+}
+
+.con-9{
+    background-color: #FAFAFA;
+    
+}
+.con-9-heading{
+    letter-spacing: -0.29px;
+    color: #3C2B75;
+    opacity: 0.6;
+    font-family: 'Poppins', sans-serif;
+    font-weight:400 ;
+    font-size:18px ;
+}
+.con-9-img{
+    width: 100px;
+height: 82px;
+}
+
+.con-10-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 10px;
+}
+
+.con-10-card>.card-title>img{
+    width: 60px;
+    height: 50px;
+    border-radius: 50%;
+    
+}
+.con-10-card>.card-text{
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: -0.26px;
+color: #000000;
+opacity: 0.6;
+}
+.con-10-card>.card-subtitle{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+    letter-spacing: -0.38px;
+color: #000000;
+}

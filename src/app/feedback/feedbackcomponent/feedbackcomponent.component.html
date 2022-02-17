@@ -1,0 +1,76 @@
+<div class="feedback-comp">
+    <div class="padding">
+        <div class="feedback-grid">
+            <div>
+                <div>
+                    <h3 class="feedback-form-title">
+                        Please fill the following form to raise your issue.
+                    </h3>
+                    <form class="row form g-3 mb-3 w-100">
+                        <div class="col-8">
+                          <label for="inputEmail4" class="form-label ">Full Name</label>
+                          <input name="cardholdername" type="text" class="form-control" >
+                        </div>
+                        <div class="col-8">
+                          <label for="inputPassword4" class="form-label">Email Address</label>
+                          <input  name="cardnumber" appOnlynumber type="number" class="form-control" >
+                        </div>
+                        <div class="col-md-8">
+                            <label for="inputState" class="form-label">Issue type</label>
+                            <select id="inputState" class="form-select">
+                              <option selected>Choose...</option>
+                              <option>...</option>
+                            </select>
+                          </div>
+                          <div class="col-md-8">
+                            <label for="inputState" class="form-label">Issue</label>
+                            <select id="inputState" class="form-select">
+                              <option selected>Choose...</option>
+                              <option>...</option>
+                            </select>
+                          </div>
+                          <div class="form-group col-8 ">
+                            <label class="form-label" for="exampleFormControlTextarea4">Issue Description</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea4" rows="3"></textarea>
+                          </div>
+                        
+                        <div class="col-8 mb-3 d-flex ">
+                            <div class="">
+                                <label class="btn btn-default py-2 px-3">
+                                    <i class="bi-upload pe-1"></i>
+                                  Upload Image <input type="file" hidden>
+                              </label>
+                            </div>
+                            <div class="pt-1 ms-3">
+                                <span class="optional-text">(Optional)</span>
+                            </div>
+                          
+                        </div>
+                        <div class="col-12 d-block">
+                            <button class="px-4 py-3 feedback-submit">
+                                Submit
+                            </button>
+                        </div>
+                        <!-- <div class="col-12">
+                          <button (click)="paymentFunction()" type="submit" class="btn btn-primary pay-btn">PAY {{totalamountgst | currency:'INR'}}</button>
+                        </div> -->
+                      </form>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h5 class="contact-header">We're happy to help you with your issue</h5>
+                </div>
+                <div class="mt-5 mb-3">
+                    <h6 class="contact-us">Contact us</h6>
+                </div>
+                <p class="list-style" >
+                    <i class="fas bi-messenger me-3"></i>
+                    info@example.com
+                  </p>
+                  <p class="list-style"><i class="fas bi-phone me-3"></i> + 01 234 567 88</p>
+                  <p class="list-style w-75"><i class="fas bi-geo-alt me-3 w-100"></i> Lingavel Tower, No.185 ground floor, Velachery Bypass Rd, Velachery, Chennai, Tamil Nadu 600042</p>
+            </div>
+        </div>
+    </div>
+</div>

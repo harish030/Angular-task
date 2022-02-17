@@ -1,0 +1,151 @@
+<div class="payment-bg">
+    <div class="padding">
+        <div class="payment-grid">
+            <div>
+                <div class="mb-4">
+                    <h3 class="payment-method-title">Choose your Payment Method</h3>
+                </div>
+                <div >
+                    <div class="form-check">
+                        <input class="form-check-input radio-btn-color" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <label class=" payment-method mb-3" for="flexRadioDefault2">
+                            Credit/Debit Cards
+                        </label>
+                        <form class="row form g-3 mb-3">
+                            <div class="col-12">
+                              <label for="inputEmail4" class="form-label">Card holder Name</label>
+                              <input [(ngModel)]="carddetails.cardholdername" name="cardholdername" type="text" class="form-control" >
+                            </div>
+                            <div class="col-12">
+                              <label for="inputPassword4" class="form-label">Card Number</label>
+                              <input [(ngModel)]="carddetails.cardnumber" name="cardnumber" appOnlynumber type="number" class="form-control" >
+                            </div>
+                            <div class="col-md-6">
+                              <label for="inputAddress" class="form-label">Expiry Date (MM/YY)</label>
+                              <input [(ngModel)]="carddetails.expirydate" name="expirydate" type="text" class="form-control" >
+                            </div>
+                            <div class="col-md-6">
+                              <label for="inputAddress2" class="form-label">CVV</label>
+                              <input [(ngModel)]="carddetails.cvv" name="cvv" appOnlynumber type="password" class="form-control" >
+                            </div>
+                            
+                            <div class="col-12 mb-3">
+                              <div class="form-check">
+                                <input class="form-check-input" checked type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Save this card for a faster checkout next time
+                                </label>
+                              </div>
+                            </div>
+                            <!-- <div class="col-12">
+                              <button (click)="paymentFunction()" type="submit" class="btn btn-primary pay-btn">PAY {{totalamountgst | currency:'INR'}}</button>
+                            </div> -->
+                          </form>
+                          <div class="col-4 mb-4">
+                            <button (click)="paymentFunction()" type="submit" class="btn btn-primary pay-btn">PAY {{totalamountgst | currency:'INR'}}</button>
+                          </div>
+                          
+                          <div class="mb-3">
+                            <input class="form-check-input radio-btn-color" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+                            <label class=" payment-method" for="flexRadioDefault2">
+                                Net Banking
+                            </label>
+                          </div>
+                          <div class="mb-3">
+                            <input class="form-check-input radio-btn-color" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+                            <label class=" payment-method" for="flexRadioDefault2">
+                                Pay via UPI
+                            </label>
+                          </div>
+                          <div>
+                            <input class="form-check-input radio-btn-color" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+                            <label class=" payment-method" for="flexRadioDefault2">
+                                Pay via UPI
+                            </label>
+                          </div>
+                      </div>
+                </div>
+            </div>
+            <div>
+                <div class="mb-4">
+                    <h3 class="order-summary">Order Summary</h3>
+                </div>
+                <div class="mb-3">
+                    <h4 class="repair-device">REPAIR DEVICE</h4>
+                </div>
+                <div *ngFor="let cartlist of cartlist ">
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <img class="pb-3" [src]="cartlist.deviceimage" alt="">
+                            <h6 class="d-inline-block cart-list-details ms-3">{{cartlist.brand}} {{cartlist.device1}} | {{cartlist.type}} | {{cartlist.ton}}</h6>
+                        </div>
+                        <div>
+                            <h6>{{cartlist.amount | currency:'INR'}}</h6>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h6 class="coupon-code">COUPON CODE</h6>
+                </div>
+                <div class="mb-4">
+                    <div class="coupon-add">
+                        <div class=" d-flex justify-content-between">
+                            <div class="pt-3 ps-3" >
+                                <h6 class="get-coupon">GET1000</h6>
+                            </div>
+                            <div class="pt-2 pb-3 pe-3">
+                                <a class="remove-coupon" href="">REMOVE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex mb-3 justify-content-between">
+                        <div class="gst-round">
+                            Service Total
+                        </div>
+                        <div class="gst-amount">
+                            {{totalamount | currency:'INR'}}
+                        </div>
+                    </div>
+                    <div class="d-flex mb-3 justify-content-between">
+                        <div class="gst-round">
+                            SGST (9%)
+                        </div>
+                        <div class="gst-amount">
+                            {{gst | currency:'INR'}}
+                        </div>
+                    </div>
+                    <div class="d-flex mb-3 justify-content-between">
+                        <div class="gst-round">
+                            CGST (9%)
+                        </div>
+                        <div class="gst-amount">
+                            {{gst | currency:'INR'}}
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <div class="gst-round">
+                            Roundoff
+                        </div>
+                        <div class="gst-amount">
+                            {{roundoff | currency:'INR'}}
+                        </div>
+                    </div>
+                </div>
+                <div class="amount-border my-3">
+
+                </div>
+                <div class="d-flex justify-content-between">
+                    <div class="grand-total">
+                        Grand Total
+                    </div>
+                    <div class="grand-total-amount">
+                        {{totalamountgst | currency:'INR'}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,81 @@
+.feedback-comp{
+    
+    background-color: #FFFFFF;
+}
+
+.feedback-comp>.padding{
+    padding-left: 7rem;
+    padding-right: 6rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.feedback-grid{
+    display: grid;
+    grid-template-columns: 50% auto;
+    column-gap: 60px;
+}
+.feedback-form-title{
+    letter-spacing: 0.32px;
+color: #000000;
+font-family: 'Poppins', sans-serif;
+font-size:16px ;
+font-weight: 400;
+width: 45%;
+}
+.form-label{
+    color: #000000;
+opacity: 0.6;
+font-family: 'Poppins', sans-serif;
+font-size:12px ;
+font-weight: 400;
+}
+
+.btn-default{
+    background: #3C2B75 0% 0% no-repeat padding-box;
+border-radius: 16px;
+color: #FFFFFF;
+font-family: 'Poppins', sans-serif;
+font-size:12px ;
+font-weight: 400;
+
+}
+.optional-text{
+    color: #000000;
+opacity: 0.6;
+font-family: 'Poppins', sans-serif;
+font-size:12px ;
+font-weight: 400;
+}
+.feedback-submit{
+    letter-spacing: 0.32px;
+color: #FFFFFF;
+font-family: 'Poppins', sans-serif;
+font-size:16px ;
+font-weight: 600;
+background-color: #3C2B75;
+border-radius: 4px;
+border: none;
+width:200px;
+}
+
+.contact-header{
+    letter-spacing: 0.8px;
+color: #3C2B75;
+font-family: 'Lato', sans-serif;
+font-weight:900 ;
+font-size:40px ;
+width: 70%;
+}
+.contact-us{
+    letter-spacing: 0.36px;
+color: #000000;
+font-family: 'Lato', sans-serif;
+font-weight:700 ;
+font-size:18px ;
+}
+.list-style{
+    color: #545061;
+    font-family: 'Poppins', sans-serif;
+font-size:16px ;
+font-weight: 400;
+}

@@ -1,0 +1,72 @@
+<nav class="navbar navbar-expand-lg  bgnavbar">
+    <div class="container-fluid py-1">
+        <a href="#" class="navbar-brand mx-5"><img class="tvs-size" src="../../assets/TVS-removebg-preview.png" alt=""></a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+                <a href="#" class="nav-item nav-link active me-2">Home</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link  me-2" data-bs-toggle="dropdown">Extended Warranty</a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item border-drop  p-3"><i class="bi-fan me-2 bg-dark p-2  bg-opacity-10"></i>Air Conditioner</a>
+                        <a href="#" class="dropdown-item border-drop  p-3"><i class="bi-phone me-2 bg-dark p-2  bg-opacity-10"></i>Phone</a>
+                        <a href="#" class="dropdown-item   p-3"><i class="bi-laptop me-2 bg-dark p-2  bg-opacity-10"></i>Laptop</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link  me-2" data-bs-toggle="dropdown">AMC</a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item border-drop  p-3"><i class="bi-fan me-2 bg-dark p-2  bg-opacity-10"></i>Air Conditioner</a>
+                        <a href="#" class="dropdown-item border-drop  p-3"><i class="bi-phone me-2 bg-dark p-2  bg-opacity-10"></i>Phone</a>
+                        <a href="#" class="dropdown-item   p-3"><i class="bi-laptop me-2 bg-dark p-2  bg-opacity-10"></i>Laptop</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link  me-2" data-bs-toggle="dropdown">Repairs & Services</a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item border-drop  p-3"><i class="bi-fan me-2 bg-dark p-2  bg-opacity-10"></i>Air Conditioner</a>
+                        <a href="#" class="dropdown-item border-drop  p-3"><i class="bi-phone me-2 bg-dark p-2  bg-opacity-10"></i>Phone</a>
+                        <a href="#" class="dropdown-item   p-3"><i class="bi-laptop me-2 bg-dark p-2  bg-opacity-10"></i>Laptop</a>
+                    </div>
+                </div>
+               
+               
+                <a href="#" class="nav-item nav-link me-2">Tracking</a>
+                
+               
+            </div>
+            <div class="navbar-nav ms-auto me-4">
+                <button (click)="goCart()" class="no-border me-5 position-relative "><i class="bi-cart-fill"></i>
+                    <div *ngIf="cartlengthshow">
+                        <span class="position-absolute  top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            {{cartlength}}
+                            
+                        </span>
+                    </div>
+                    
+                </button>
+                <button routerLink="/cart" href="#" class="px-3 py-1 btn-outline1 me-4"><i class="bi-shield-shaded me-2"></i>Raise a claim</button>
+                <button *ngIf="showlogin" routerLink="/signup" class="px-3 py-1 btn-outline">Log-in</button>
+                <!-- <div *ngIf="showprofile" class="pe-auto">
+                    <h6 class="m-0 p-0">Harish hameed mo</h6>
+                    <h6>Profile</h6>
+                </div> -->
+                <div *ngIf="showprofile" class="nav-item dropdown pe-auto ">
+                    <h6 class="m-0 p-0 text-center user-name">{{name}}</h6>
+                    <a   class="nav-link profile-logout text-center  me-2" data-bs-toggle="dropdown">Profile & Services</a>
+                    <div  class="dropdown-menu">
+                        <a (click)="profileService()" class="dropdown-item   p-3"><i class="bi-person me-2  p-2  bg-opacity-10"></i>Profile & Services</a>
+                        <a (click)="logOut()" class="dropdown-item   p-3"><i class="bi-box-arrow-right me-2  p-2  bg-opacity-10"></i>Log Out</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<router-outlet></router-outlet>
+
+<app-tvs-footer></app-tvs-footer>

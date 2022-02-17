@@ -1,0 +1,21 @@
+<div class="signupform-bg">
+    <form class="col-4 mx-auto my-auto   " >
+        <div>
+            <img class="tvs-size" src="../../../assets/TVS-removebg-preview.png" alt="">
+        </div>
+        <h3 class="signup-heading mt-4">
+            Sign-In / Register
+        </h3>
+        <h6 class="signup-subheading mt-3">Enter Mobile Number</h6>
+        <div class="input-group mb-3">
+            <span class="input-group-text " id="basic-addon1">+91</span>
+            <input name="mobilenumber1" appOnlynumber type="text" [(ngModel)]="mobilenumber.mobilenumber1" maxlength="10"  class="form-control signup-inputnumber" placeholder="Enter mobile number here" >
+        </div>
+        <button (click)="onContinue()" class="px-5 py-3 signup-button mt-4">Continue</button>
+        <div class="text-center mt-4">
+            <a class="signup-withemail">Sigh in with your Email</a>
+        </div>
+       
+    </form>
+</div>
+<router-outlet></router-outlet>

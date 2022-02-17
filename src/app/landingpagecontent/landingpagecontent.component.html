@@ -1,0 +1,569 @@
+<div >
+    <div class="banner mx-5 mt-0 mb-4">
+        <div class="d-flex input-form ">
+            <div>
+                <input [(ngModel)]="pincodeservice.pincode" name="pincode" type="number" placeholder="Pincode" class="ps-5 me-3 input-1">
+            </div>
+            <div class="position-relative">
+                <input [(ngModel)]="pincodeservice.service" name="service" placeholder="Find the devices or Services" class="input-2 px-2 " type="text">
+                <button (click)="pincodeToast()"  class="pos-rel px-3 py-2">Search</button>
+            </div>
+        </div>
+        <div *ngIf="pincodetoastshow">
+            <div class="pincode-toast">
+                <div class="padding ">
+                    <div class="d-flex justify-content-between">
+                        <div class="d-flex">
+                            <div class="me-2 ">
+                                <i class="bi-exclamation-triangle-fill"></i>
+                            </div>
+                            <div>
+                                <h6 class="pincode-toast-title mt-1">Warning</h6>
+                            </div>
+                        </div>
+                        <div>
+                            <a (click)="toastClose()"><i class="bi-x"></i></a>
+                            
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <h6 class="pincode-toast-content">Some services might be unavailable in the location which you've selected.</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="deviceserviceshow" class="device-repair-select">
+            <div class="padding ">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h5 class="select-device-repair-title">Select the Device to Repair</h5>
+                    </div>
+                    <div>
+                        <a (click)="devicerepairclose()"><i class="bi-x text-danger"></i></a>
+                        
+                    </div>
+                </div>
+                    <div class="mt-4 ">
+                        <div class="overflow">
+                            <div class="d-flex">
+                                <img class="device-repair-bg p-3" src="../../assets/aircooler.png" alt="">
+                                <h6 class="ms-4 pt-2 device-repair-name ">Air Conditioner</h6>
+                            </div>
+                            <hr>
+                            <div class="d-flex">
+                                <img class="device-repair-bg p-3" src="../../assets/refri.png" alt="">
+                                <h6 class="ms-4 pt-2 device-repair-name ">Refrigerator</h6>
+                            </div>
+                            <hr>
+                            <div class="d-flex">
+                                <img  class="device-repair-bg p-2" src="../../assets/phone.png" alt="">
+                                <h6 class="ms-4 pt-2 device-repair-name ">Phone</h6>
+                            </div>
+                            <hr>
+                            <div class="d-flex">
+                                <img class="device-repair-bg p-3" src="../../assets/tv.png" alt="">
+                                <h6 class="ms-4 pt-2 device-repair-name ">TV</h6>
+                            </div>
+                            <hr>
+                            <div class="d-flex">
+                                <img  class="device-repair-bg p-2" src="../../assets/refri.png" alt="">
+                                <h6 class="ms-4 pt-2 device-repair-name ">Refrigerator</h6>
+                            </div>
+                            
+                        </div>
+                    
+                    
+                   
+                </div>
+            </div>
+        </div>
+        
+        <div class="popular-searches d-flex">
+            <a class="search me-2"><i class="bi-clock me-2"></i>Popular Searches</a>
+            <a class="search-item me-2" href="">Air Conditioner</a>
+            <a class="search-item me-2" href="">Refrigerator</a>
+            <a class="search-item me-2" href="">AMC</a>
+            <a class="search-item" href="">Extended Warranty</a>
+        </div>
+        <div class="service-item-list">
+            <div class="d-flex">
+                <div class="me-3">
+                    <i class="bi-chevron-left"></i>
+                </div>
+                <div class="me-3" >
+                    <i class="bi-gear service-item-width"></i>
+                </div>
+                <div class="me-3">
+                    <p class="service-item-css mt-1">473 Dell Batteries replaced</p>
+                </div>
+                <div>
+                    <i class="bi-chevron-right"></i>
+                </div>
+            </div>
+    
+        </div>
+        <div  class="device-service-comp">
+                <div class="device-service-comp-grid py-3 px-5">
+                    <div>
+                        <h6>Devices</h6>
+                        <div class="w-100 mt-4 d-flex justify-content-between">
+                            <div>
+                                <button class="border-app"   (click)="deviceClick(1)"><img  src="../../assets/refri.png" alt=""></button>
+                                <h6 class="mt-3 text-center">Refrigrator</h6>
+                            </div>
+                            <div>
+                                <button class="border-app" (click)="deviceClick(2)"><img  src="../../assets/tv.png" alt=""></button>
+                                <h6 class="mt-3 text-center">TV</h6>
+                            </div>
+                            <div>
+                                <button class="border-app" (click)="deviceClick(3)"><img  src="../../assets/aircooler.png" alt=""></button>
+                                <h6 class="mt-3 text-center">AC</h6>
+                            </div>
+                            <div>
+                                <button class="border-app" (click)="deviceClick(4)"><img class="phone"  src="../../assets/phone.png" alt=""></button>
+                                <h6 class="mt-3 text-center">Phone</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h6>Services</h6>
+                        <div class="d-flex mt-4  w-100 flex-wrap">
+                            <div class="me-2 mb-2">
+                                <button (click)="serviceClick()" class="service-bg">
+                                    <div class="p-2">
+                                        <img src="../../assets/setting-tool.png" alt="">
+                                    Maintenance and Service
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="me-2">
+                                <button (click)="serviceClick()" class="service-bg">
+                                    <div class="p-2">
+                                        <img src="../../assets/setting-tool.png" alt="">
+                                    Repair
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="me-2">
+                                <button (click)="serviceClick()" class="service-bg">
+                                    <div class="p-2">
+                                        <img src="../../assets/shield.png" alt="">
+                                    Extend Warranty
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="me-2">
+                                <button (click)="serviceClick()" class="service-bg">
+                                    <div class="p-2">
+                                        <img src="../../assets/setting-tool.png" alt="">
+                                    Installation
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="">
+                                <button (click)="serviceClick()" class="service-bg">
+                                    <div class="p-2">
+                                        <img src="../../assets/setting-tool.png" alt="">
+                                    Uninstallation
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+
+
+<div class="warranty-comp">
+    <div class="warranty-comp-header ">
+        <h3>
+            Subscribe for extended warranty, have a hassle free life.
+        </h3>
+    </div>
+    <div class="px-5 mx-5 warranty-comp-grid mt-4 pb-5  ">
+        <div class="px-3">
+            <div class="d-flex mb-3">
+                <div class="warranty-comp-bg">
+                    <i class="bi-hand-index-thumb p-2 text-white "></i>
+                </div>
+                <div class="ms-3">
+                    <h6 class="text-white warranty-comp-instruct">Choose the type of device</h6>
+                    <h6 class="warranty-comp-instruct2">Lorem ipsum dolor sit amet,consectetur adipiscing</h6>
+                </div>
+            </div>
+            <div class="d-flex mb-3">
+                <div class="con4-bg">
+                    <i class="bi-gear p-2 text-white "></i>
+                </div>
+                <div class="ms-3">
+                    <h6 class="text-white warranty-comp-instruct">Choose the type of device</h6>
+                    <h6 class="warranty-comp-instruct2">Lorem ipsum dolor sit amet,consectetur adipiscing</h6>
+                </div>
+            </div>
+            <div class="d-flex">
+                <div class="con4-bg">
+                    <i class="bi-shield-check p-2 text-white "></i>
+                </div>
+                <div class="ms-3">
+                    <h6 class="text-white warranty-comp-instruct">Choose the type of device</h6>
+                    <h6 class="warranty-comp-instruct2">Lorem ipsum dolor sit amet,consectetur adipiscing</h6>
+                </div>
+            </div>
+            <div class="warranty-comp-input mt-3 ">
+                <div class="p-3 d-flex ">
+                    <div class="w-100">
+                        <h6>Device</h6>
+                    <select class="form-select  w-50 " id="inlineFormSelectPref">
+                        <option disabled selected>Select Device</option>
+                        <option value="1">Refrigrator</option>
+                        <option value="2">TV</option>
+                        <option value="3">Air Conditioner</option>
+                    </select>
+                    </div>
+                    <div class="w-50">
+                        <button class="warranty-comp-btn text-center px-3 mt-2 py-3">Check plan</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <img class="w-100" src="../../assets/home-appliances-removebg-preview.png" alt="">
+        </div>
+    </div>
+</div>
+<div class="py-5 px-4">
+    <h3 class="mantain-contract-header text-center">Annual Maintenance Contract</h3>
+    <h6 class="text-center mantain-contract-subheader">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h6>
+    <div class="mantain-contract-grid px-5 mt-5">
+        <div class="card" >
+            <img src="../../assets/ac-service-org.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Air conditioner AMC</h5>
+              <p class="card-text">General Annual maintenance for your Air Conditioner</p>
+             
+            </div>
+          </div>
+          <div class="card" >
+            <img src="../../assets/refri-service-org.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Refrigerator AMC</h5>
+              <p class="card-text">General Annual maintenance for your Refrigerator</p>
+              
+            </div>
+          </div>
+          <div class="card" >
+            <img src="../../assets/washing-service-org.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Washing Machine AMC</h5>
+              <p class="card-text">General Annual maintenance for your Washing machine</p>
+            
+            </div>
+          </div>
+    </div>
+</div>
+<div class="specific-service mb-5">
+    <div class="ps-5 ms-5 pt-5 pb-5">
+        <h4 class="mt-5  ">For your specific service needs, we have highly-tailored solutions.</h4>
+        <div class="specific-service-form  ">
+            <div class="px-4  py-3 d-flex justify-content-between">
+                <div>
+                    <h6 class="ms-2">Device</h6>
+                    <select class="form-select w-100 border-0 " id="inlineFormSelectPref">
+                        <option disabled selected>Select Device</option>
+                        <option value="1">Refrigerator</option>
+                        <option value="2">Washing Machine</option>
+                        <option value="3">Air conditioner</option>
+                      </select>
+                </div>
+                <div>
+                    <h6 class="ms-2">Service</h6>
+                    <select class="form-select border-0 w-100 text-start " id="inlineFormSelectPref">
+                        <option disabled selected>Select Service</option>
+                        <option value="1">Repair</option>
+                        <option value="2">Installation</option>
+                        <option value="3">UnInstallation</option>
+                      </select>
+                </div>
+
+                <div>
+                    <button class="p-3 form-button">Request Service</button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h4 class="mt-5 specific-service-subheader">How it works</h4>
+            <div class="specific-service-grid px-4 mt-4">
+                <div class="ps-4 specific-service-card pt-4">
+                    <div class="d-flex">
+                        <div class="circle"></div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="mt-4 px-3">
+                        <h4 class="specific-service-card-title">
+                            Select your Device
+                        </h4>
+                        <p class="specific-service-card-body  mt-4">
+                            Save Money on expensive repairs in future by extending the manufacturer warranty on your new devices
+                        </p>
+                    </div>
+
+                </div>
+                <div class="ps-4 specific-service-card pt-4">
+                    <div class="d-flex">
+                        
+                        <div class="line1"></div>
+                        <div class="circle"></div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="mt-4 px-3">
+                        <h4 class="specific-service-card-title">
+                            Select your Device
+                        </h4>
+                        <p class="specific-service-card-body  mt-4">
+                            Save Money on expensive repairs in future by extending the manufacturer warranty on your new devices
+                        </p>
+                    </div>
+
+                </div>
+                <div class="ps-4 specific-service-card pt-4">
+                    <div class="d-flex">
+                        <div class="line1"></div>
+                        <div class="circle"></div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="mt-4 px-3">
+                        <h4 class="specific-service-card-title">
+                            Select your Device
+                        </h4>
+                        <p class="specific-service-card-body  mt-4">
+                            Save Money on expensive repairs in future by extending the manufacturer warranty on your new devices
+                        </p>
+                    </div>
+
+                </div>
+                <div class="ps-4 specific-service-card pt-4">
+                    <div class="d-flex">
+                        <div class="line1"></div>
+                        <div class="circle"></div>
+                    </div>
+                    <div class="mt-4 px-3">
+                        <h4 class="specific-service-card-title">
+                            Select your Device
+                        </h4>
+                        <p class="specific-service-card-body  mt-4">
+                            Save Money on expensive repairs in future by extending the manufacturer warranty on your new devices
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="specific-service-img">
+
+        </div>
+    </div>
+    
+</div>
+
+<div class="con-7">
+    <div class="con-7-bg">
+      
+    </div>
+    <div class=" con-7-main-grid">
+        <div class="pt-5">
+            <h6 class="con-7-header">POPULAR SERVICES <span class="con-7-line mb-1"></span> </h6>
+           
+            <h3 class="con-7-subheading mt-3">Meet our Popular Services</h3>
+            <p class="con-7-content mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis.</p>
+        </div>
+        <div class="con-7-sub-grid">
+            <div class="con-7-img" >
+                <img class="w-100"    src="../../assets/ac-service-org.png" alt="">
+                <h6 class="px-3">AC Repair</h6>
+            </div>
+            <div class="con-7-img">
+                <img class="w-100"   src="../../assets/refri-service-org.png" alt="">
+                <h6 class="px-3" >Refrigerator Repair</h6>
+            </div>
+            <div class="con-7-img">
+                <img class="w-100"   src="../../assets/washing-service-org.png" alt="">
+                <h6 class="px-3">Washing Machine Repair</h6>
+            </div>
+            <div class="con-7-img">
+                <img class="w-100"   src="../../assets/laptom-service-org.png" alt="">
+                <h6>Laptop Repair</h6>
+            </div>
+            <div class="con-7-img">
+                <img class="w-100" src="../../assets/phone-service-org.png" alt="">
+                <h6>Phone Repair</h6>
+            </div>
+            <div class="con-7-img">
+                <img class="w-100"   src="../../assets/phone-service-org.png" alt="">
+                <h6>AC Repair</h6>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="con-8">
+    <div class=" mx-auto mt-5">
+        <h4 class="con-8-heading">Getting Our Services Done Quickly And Efficiently</h4>
+        <p class="con-8-subheading mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+    </div>
+    <div class="con-8-maingrid">
+        <div class="w-100 bg-color ">
+            <img style="width: 500px;" class="p-5 mt-5"  src="../../assets/men.png" alt="">
+        </div>
+        <div>
+            <h6 class="con-8-grid-heading">OUR PROMISE<span class="con-8-lineblack mb-1 "></span></h6>
+            <div class="con-8-subgrid pe-4 ">
+                <div class="card">
+                    <div class="card-body con-8-card">
+                      <h5 class="card-title">
+                        <div class="text-center pt-2">
+                            <i class="bi-calendar  align-middle"></i>
+                        </div>
+                      </h5>
+                      <h6 class="card-subtitle mt-3 ">60-days Post repair Warranty</h6>
+                      <p class="card-text mt-3">Our acceptance rate is 99.4%. We don’t ask any questions at the time of raising a service request</p>
+                     
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-body con-8-card">
+                      <h5 class="card-title">
+                        <div class="text-center pt-2">
+                            <i class="bi-cpu-fill  align-middle"></i>
+                        </div>
+                      </h5>
+                      <h6 class="card-subtitle mt-3 ">Genuine/OEM Spares</h6>
+                      <p class="card-text mt-3">Only authorized service centers and genuine spare parts</p>
+                     
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-body con-8-card">
+                      <h5 class="card-title">
+                        <div class="text-center pt-2">
+                            <i class="bi-sliders  align-middle"></i>
+                        </div>
+                      </h5>
+                      <h6 class="card-subtitle mt-3 ">No Quick-fix Solutions</h6>
+                      <p class="card-text mt-3">Only authorized service centers and genuine spare parts</p>
+                     
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-body con-8-card">
+                      <h5 class="card-title">
+                        <div class="text-center pt-2">
+                            <i class="bi-person-badge-fill  align-middle"></i>
+                        </div>
+                      </h5>
+                      <h6 class="card-subtitle mt-3 ">Best-in-class Standard service Rate</h6>
+                      <p class="card-text mt-3">Our acceptance rate is 99.4%. We don’t ask any questions at the time of raising a service request</p>
+                     
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-body con-8-card">
+                      <h5 class="card-title">
+                        <div class="text-center pt-2">
+                            <i class="bi-gear-fill  align-middle"></i>
+                        </div>
+                      </h5>
+                      <h6 class="card-subtitle mt-3 ">Superfast & Superior Service</h6>
+                      <p class="card-text mt-3">Only authorized service centers and genuine spare parts</p>
+                     
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-body con-8-card">
+                      <h5 class="card-title">
+                        <div class="text-center pt-2">
+                            <i class="bi-hand-thumbs-up-fill  align-middle"></i>
+                        </div>
+                      </h5>
+                      <h6 class="card-subtitle mt-3 ">A Trusted Name</h6>
+                      <p class="card-text mt-3">Only authorized service centers and genuine spare parts</p>
+                     
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="con-9">
+ <div class="text-center w-100 mx-auto mt-5">
+     <h4 class="con-9-heading pt-5">TRUSTED BY LEADERS</h4>
+     <div class="d-flex justify-content-around py-5 px-4">
+        <div>
+            <img class="con-9-img" src="../../assets/samsung-removebg-preview.png" alt="">
+        </div>
+        <div>
+            <img class="con-9-img"  src="../../assets/mi-removebg-preview.png" alt="">
+        </div>
+        <div>
+            <img class="con-9-img"  src="../../assets/hp1-removebg-preview.png" alt="">
+        </div>
+        <div>
+            <img class="con-9-img"  src="../../assets/amazon-removebg-preview.png" alt="">
+        </div>
+        <div>
+            <img class="con-9-img"  src="../../assets/dell-removebg-preview.png" alt="">
+        </div>
+        <div>
+            <img class="con-9-img"  src="../../assets/asus-removebg-preview.png" alt="">
+        </div>
+       
+     </div>
+ </div>
+</div>
+<div class="con-10 mt-5">
+    <div class=" text-center">
+        <h4>Testimonials</h4>
+        <div class="con-10-grid px-5 mt-5">
+            <div class="card">
+                <div class="card-body con-10-card">
+                  <h5 class="card-title text-start">
+                    <img src="../../assets/person1.jfif" alt="">
+                  </h5>
+                  <h6 class="card-subtitle mt-3 text-start ">Vincent Hill</h6>
+                  <p class="card-text mt-3 text start">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                 
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body con-10-card">
+                  <h5 class="card-title text-start">
+                    <img src="../../assets/person2.jfif" alt="">
+                  </h5>
+                  <h6 class="card-subtitle mt-3 text-start ">Johnny Gilbert</h6>
+                  <p class="card-text mt-3 text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                 
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body con-10-card">
+                  <h5 class="card-title text-start ">
+                    <img  src="../../assets/person3.jfif" alt="">
+                  </h5>
+                  <h6 class="card-subtitle mt-3 text-start ">Jeremy Coleman</h6>
+                  <p class="card-text mt-3 text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris</p>
+                 
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,140 @@
+.payment-bg{
+    background-color: #FAFAFA;
+    
+}
+.payment-bg>.padding{
+    padding: 4rem;
+}
+.payment-grid{
+    display: grid;
+    grid-template-columns: 60% auto;
+    column-gap: 30px;
+}
+.payment-method-title{
+    color: #000000;
+    font-family: 'Lato', sans-serif;
+    font-weight:900;
+    font-size:24px ;
+    width: 30%;
+}
+.form{
+    width: 70%;
+}
+.payment-method{
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    font-weight:500;
+    font-size:14px ;
+}
+.form-label{
+    color: #545061;
+opacity: 0.6;
+font-family: 'Poppins', sans-serif;
+    font-weight:400;
+    font-size:12px ;
+}
+.form-control{
+    background-color: #FFFFFF;
+    border: 1px solid #3C2B7529;
+border-radius: 4px;
+height: 48px;
+}
+.form-check-label{
+    color: #545061;
+    font-family: 'Poppins', sans-serif;
+    font-weight:400;
+    font-size:14px ;
+}
+.pay-btn{
+    width: 100%;
+    height: 56px;
+    background-color: #3C2B75;
+    border-radius: 2px;
+    border: none;
+}
+
+.radio-btn-color{
+    border: 1px solid #3C2B75;
+    color: #3C2B75;
+    background-color:#3C2B75 ;
+    
+}
+.order-summary{
+    color: #000000;
+    font-family: 'Lato', sans-serif;
+    font-weight:700 ;
+    font-size:16px ;
+}
+
+.repair-device{
+    color: #545061;
+    font-family: 'Poppins', sans-serif;
+    font-weight:500;
+    font-size:12px ;
+}
+.cart-list-details{
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    font-weight:400;
+    font-size:14px ;
+    width:65%;
+}
+.coupon-code{
+    color: #545061;
+    font-family: 'Poppins', sans-serif;
+    font-weight:400;
+    font-size:12px ;
+}
+.coupon-add{
+    border: 1px solid #C6C6C6;
+border-radius: 4px;
+background-color: #FFFFFF;
+width: 100%;
+
+}
+
+.get-coupon{
+    color: #2A2A2A;
+    font-family: 'Poppins', sans-serif;
+    font-weight:600;
+    font-size:14px ;
+}
+.remove-coupon{
+    color: #F31D50;
+    text-decoration: underline;
+    font-family: 'Poppins', sans-serif;
+    font-weight:500;
+    text-transform: uppercase;
+    font-size:12px ;
+}
+.gst-round{
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    font-weight:400;
+    font-size:12px ;
+    opacity: 0.6;
+}
+.gst-amount{
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    font-weight:400;
+    font-size:12px ;
+}
+.amount-border{
+    background-color: #545061;
+    width: 100%;
+    height: 1px;
+    opacity: 0.3;
+}
+.grand-total{
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    font-weight:500;
+    font-size:16px ;
+}
+.grand-total-amount{
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    font-weight:600;
+    font-size:20px ;
+}
